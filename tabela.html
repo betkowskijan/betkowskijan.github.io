@@ -12,17 +12,6 @@
     <link href="src/tabela.css" rel="stylesheet" />
     <link href="src/general/nav.css" rel="stylesheet" />
     <title>Jan Bętkowski | Tabela</title>
-    <script>
-      let titles = ['|', '/', '-', '\\'];
-      let index = 0;
-
-      setInterval(() => {
-        document.title = `Jan Bętkowski ${titles[index]} Tabela`;
-        index = (index + 1) % titles.length;
-      }, 500);
-    </script>
-    <script src="src/nav.js" defer></script>
-    <script src="src/tabela.js" defer></script>
   </head>
   <body>
     <nav>
@@ -66,5 +55,16 @@
         <button class="clear">Wyczyść</button>
       </div>
     </div>
+    <script>
+      let titles = ['|', '/', '-', '\\'];
+      let index = 0;
+
+      setInterval(() => {
+        document.title = `Jan Bętkowski ${titles[index]} Tabela`;
+        index = (index + 1) % titles.length;
+      }, 500);
+    </script>
+    <script src="src/nav.js" defer></script>
+    <script src="src/tabela.js" defer></script>
   </body>
 </html>

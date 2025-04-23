@@ -12,16 +12,6 @@
     <link href="src/general/style.css" rel="stylesheet" />
     <link href="src/general/nav.css" rel="stylesheet" />
     <title>Jan Bętkowski | Zdjęcia</title>
-    <script>
-      let titles = ['|', '/', '-', '\\'];
-      let index = 0;
-
-      setInterval(() => {
-        document.title = `Jan Bętkowski ${titles[index]} Zdjęcia`;
-        index = (index + 1) % titles.length;
-      }, 500);
-    </script>
-    <script src="src/nav.js" defer></script>
   </head>
   <body>
     <nav>
@@ -64,5 +54,15 @@
         <img src="https://lorempic.com/200/200" alt="zdjęcie 10" />
       </div>
     </main>
+    <script>
+      let titles = ['|', '/', '-', '\\'];
+      let index = 0;
+
+      setInterval(() => {
+        document.title = `Jan Bętkowski ${titles[index]} Zdjęcia`;
+        index = (index + 1) % titles.length;
+      }, 500);
+    </script>
+    <script src="src/nav.js" defer></script>
   </body>
 </html>

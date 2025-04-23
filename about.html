@@ -13,17 +13,6 @@
     <link href="src/kontakt.css" rel="stylesheet" />
     <link href="src/general/nav.css" rel="stylesheet" />
     <title>Jan Bętkowski | O mnie</title>
-    <script>
-      let titles = ['|', '/', '-', '\\'];
-      let index = 0;
-
-      setInterval(() => {
-        document.title = `Jan Bętkowski ${titles[index]} O mnie`;
-        index = (index + 1) % titles.length;
-      }, 500);
-    </script>
-    <script src="src/nav.js" defer></script>
-    <script src="src/kontakt.js" defer></script>
   </head>
   <body>
     <nav>
@@ -107,5 +96,16 @@
         </form>
       </aside>
     </div>
+    <script>
+      let titles = ['|', '/', '-', '\\'];
+      let index = 0;
+
+      setInterval(() => {
+        document.title = `Jan Bętkowski ${titles[index]} O mnie`;
+        index = (index + 1) % titles.length;
+      }, 500);
+    </script>
+    <script src="src/nav.js" defer></script>
+    <script src="src/kontakt.js" defer></script>
   </body>
 </html>
