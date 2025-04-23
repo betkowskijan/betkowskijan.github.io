@@ -1,0 +1,14 @@
+:root {
+  --bg-color: #daf5ff;
+  --nav-color: #011627;
+  --nav-text-color: rgb(211, 211, 211);
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  margin: 0px;
+}
